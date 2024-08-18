@@ -2260,6 +2260,8 @@ section {
 #hero .carousel-item {
   background-size: cover;
   background-position: center;
+  display: block !important;
+  visibility: visible !important;
   animation: breatheAndCycle 25s infinite;
 }
 

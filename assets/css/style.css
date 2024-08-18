@@ -121,9 +121,10 @@ h6 {
   color: #47b2ea;
 }
 
-@media (max-width: 768px) {
-  .header-social-links {
-    display: none;
+@media (max-width: 999px) {
+  .header-social-links,
+  .header-social-links a {
+    display: none !important;
   }
 }
 

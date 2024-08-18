@@ -82,7 +82,7 @@ h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 #header .logo a {

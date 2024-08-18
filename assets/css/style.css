@@ -123,10 +123,16 @@ h6 {
 
 @media (max-width: 768px) {
   .header-social-links {
+    display: none;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .header-social-links {
     padding: 0 15px 0 0;
     border-left: 0;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -2325,30 +2331,3 @@ section {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  #header .logo img {
-    max-height: 50px; /* Adjust logo size as needed */
-  }
-
-  .navbar ul {
-    display: block; /* Ensure that the menu shows when toggled */
-    padding: 0;
-    background: #fff;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .navbar ul li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar ul a {
-    padding: 15px;
-    display: block;
-    font-size: 16px;
-  }
-}

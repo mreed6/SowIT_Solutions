@@ -300,7 +300,7 @@ h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  max-height: calc(35vh - 70px);
+  max-height: calc(31vh - 70px);
   margin: 0;
   top: 55px;
   right: 15px;

@@ -1,3 +1,14 @@
+/**
+* Template Name: Company
+* Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
@@ -122,18 +133,11 @@ h6 {
 }
 
 @media (max-width: 768px) {
-  .header-social-links,
-  .header-social-links a {
-    display: none !important;
-  }
-}
-
-/* @media (max-width: 768px) {
   .header-social-links {
     padding: 0 15px 0 0;
     border-left: 0;
   }
-}*/
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -300,8 +304,6 @@ h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  max-height: calc(31vh - 70px);
-  margin: 0;
   top: 55px;
   right: 15px;
   bottom: 15px;
@@ -396,15 +398,20 @@ h6 {
   position: absolute;
   bottom: 60px;
   top: 70px;
-  left: 55px;
-  right: 55px;
+  left: 10px;
+  right: 10px;
+  padding: 0; /* Remove any padding */
+  width:  100%; /* Ensure full width */
+  max-width: 100%; /* Remove any max-width constraints */
 }
 
 #hero .carousel-content {
   background: rgba(4, 4, 4, 0.7);
+    /* rgba(4, 4, 4, 0.7) */
+  width: 100%; /* Make the container full width */
   padding: 20px;
   color: #fff;
-  border-top: 5px solid #47b2ea;
+  border-top: 0px solid #47b2ea;
 }
 
 #hero .carousel-content h2 {
@@ -506,7 +513,7 @@ h6 {
 
 @media (min-width: 1024px) {
   #hero .carousel-content {
-    width: 60%;
+    width: 90%;
   }
 
   #hero .carousel-control-prev,
@@ -518,6 +525,9 @@ h6 {
 @media (max-width: 992px) {
   #hero .carousel-container {
     top: 58px;
+    left: 0; /* Remove the left padding */
+    right: 0; /* Remove the right padding */
+    padding: 0;
   }
 
   #hero .carousel-content h2 {
@@ -533,7 +543,12 @@ h6 {
 @media (max-height: 500px) {
   #hero {
     height: 120vh;
+    padding: 0;
   }
+}
+
+#hero .carousel {
+  width: 100%; /* Ensure the full width is used */
 }
 
 /*--------------------------------------------------------------
@@ -619,15 +634,11 @@ section {
 
 @media (max-width: 991px) {
   .breadcrumbs {
-    margin-top: 80px;
+    margin-top: 58px;
   }
 
   .breadcrumbs .d-flex {
-    /* display: block !important; */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: block !important;
   }
 
   .breadcrumbs ol {
@@ -1425,12 +1436,19 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info-wrap {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers the items vertically */
+  flex-direction: row; /* Aligns the items in a row */
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
 
 .contact .info {
+  text-align: center; /* Centers the text inside each flex item */
+  margin: 0 50px; /* Optional: Adds space between the items */
   background: #fff;
 }
 
@@ -1461,6 +1479,28 @@ section {
   margin-bottom: 0;
   font-size: 14px;
   color: #444444;
+}
+
+@media (max-width: 768px) {
+  .contact .info-wrap {
+    display: none; /* Hide the section on screens smaller than 768px */
+  }
+
+  .contact {
+    padding-top: 0; /* Remove padding for the contact section */
+    margin-top: 0;  /* Remove margin for the contact section */
+  }
+
+  #contact {
+    padding-top: 0; /* Remove padding for the contact form section */
+    margin-top: 0;  /* Remove margin for the contact form section */
+  }
+
+  /* If there's a specific class for the form itself, add this */
+  .contact .form-section {
+    padding-top: 0; /* Adjust padding for the form section */
+    margin-top: 0;  /* Adjust margin for the form section */
+  }
 }
 
 .contact .info:hover i {
@@ -2097,7 +2137,7 @@ section {
   line-height: 1;
   font-weight: 500;
   letter-spacing: 1px;
-  text-transform: none;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -2260,8 +2300,6 @@ section {
 #hero .carousel-item {
   background-size: cover;
   background-position: center;
-  display: block !important;
-  visibility: visible !important;
   animation: breatheAndCycle 25s infinite;
 }
 
@@ -2339,4 +2377,3 @@ section {
   color: #777;
   font-weight: 500;
 }
-

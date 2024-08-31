@@ -132,10 +132,11 @@ h6 {
   color: #47b2ea;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 996px) {
   .header-social-links {
-    padding: 0 15px 0 0;
-    border-left: 0;
+    /* padding: 0 15px 0 0;
+    border-left: 0; */
+    display: none !important;
   }
 }
 

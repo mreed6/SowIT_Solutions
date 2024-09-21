@@ -1385,7 +1385,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
     padding: 60px 0;
-    background: #fff;
+    background: #f7f7f7;
     position: relative;
 }
 
@@ -2194,7 +2194,6 @@ section {
     line-height: 1;
     font-weight: 500;
     letter-spacing: 1px;
-    text-transform: uppercase;
     color: #fff;
 }
 

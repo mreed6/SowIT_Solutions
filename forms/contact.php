@@ -3,8 +3,10 @@
   $receiving_email_address = 'reed@sowitsolutions.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
+    echo 'File found';
     include( $php_email_form );
   } else {
+    echo 'File Not found';
     die( 'Unable to load the "PHP Email Form" Library!');
   }
 

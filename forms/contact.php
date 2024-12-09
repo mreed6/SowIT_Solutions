@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'reed@sowitsolutions.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -23,15 +23,19 @@
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
 
+  // Fetching password from environment variable
+  $phpname = getenv('PHP_NAME');
+  $phpkey = getenv('PHP_KEY');
+
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
+
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
+    'host' => 'smtp.gmail.com',
+    'username' => $phpname,
+    'password' => $phpkey,
     'port' => '587'
   );
-  */
+
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
